@@ -1,0 +1,10 @@
+JWT stands for JSON Web Tokens, which is a standard for representing and transmitting secure information between two parties. In Node.js, JWT is commonly used for authentication and authorization purposes.
+
+When a user logs in to a Node.js application, the server generates a JWT containing some user information, such as their user ID, email, and any other data the application requires. This JWT is then passed back to the client and stored in a cookie or local storage.
+
+On subsequent requests, the client sends the JWT back to the server to authenticate the user. The server verifies the JWT and uses the information within it to determine whether the user is authorized to access the requested resource.
+
+JWTs are often preferred over traditional session-based authentication because they can be easily shared across different services and are stateless, meaning that the server does not need to store user session information.
+
+There are many Node.js libraries and frameworks available for working with JWTs, including the popular libraries such as jsonwebtoken and passport-jwt. These libraries simplify the process of generating, verifying, and decoding JWTs, allowing developers to quickly and easily add authentication and authorization to their Node.js applications.
+
